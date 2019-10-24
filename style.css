@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  /* margin: 0 auto; */
+  position: relative;
+}
+
+.box {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.one, .two, .three {
+  font-size: 1000%;
+  height: 100vh;
+}
+
+.item {
+  position: relative;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: anime 7s linear;
+}
+
+@keyframes anime{
+  0% {
+    top: 100%;
+  }
+  100%{
+    top: -300%;
+  }
+}
+
+h1 {
+  /* z-index: 1; */
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  color: black;
+  font-size: 200px;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  margin: 0 auto;
+  animation-name: font;
+  animation-duration: 4s;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+
+p {
+  /* z-index: 1; */
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  color: black;
+  font-size: 60px;
+  position: absolute;
+  top: 65%;
+  left: 0;
+  margin: 0 auto;
+  animation-name: font;
+  animation-duration: 4s;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes font {
+  0%{
+    color: black;
+    opacity: 0;
+  }
+
+  100%{
+    color: white;
+    opacity: 1;
+  }
+}
+@keyframes font2 {
+  0% {
+    opacity: 1;
+    color: white;
+  }
+  10% {
+    color: silver;
+  }
+  20% {
+    color: gold;
+  }
+  30% {
+    color:yellow;
+  }
+  40% {
+    color: greenyellow;
+  }
+  50% {
+    color: green;
+  }
+  60% {
+    color: aquamarine;
+  }
+  70% {
+    color: aqua;
+  }
+  80% {
+    color: aliceblue;
+  }
+  90% {
+    color: papayawhip;
+  }
+  1000% {
+    opacity: 1;
+    color: pink;
+  }
+}

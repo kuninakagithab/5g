@@ -1,0 +1,274 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: black; */
+  background-image: url(https://d1i9y8i5xa5nlc.cloudfront.net/uploads/user_image/image/10498/resize_img_eca3b610-237a-4420-943b-945b4e380dc3.jpg);
+  background-size: 10%,10%;
+  animation: slid 300s linear infinite;
+}
+
+@keyframes slid {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100%, 0;
+  }
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+header {
+  width: 90%;
+  height: 10vh;
+  background-color: black;
+  position: fixed;
+  /* position: relative; */
+}
+
+ul {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+}
+
+li {
+  text-decoration: none;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 40px;
+  color: white;
+}
+
+.hidden_box {
+  padding: 0;
+}
+
+.fas {
+  color: white;
+  font-size: 30px;
+}
+
+/*ボタン装飾*/
+.hidden_box label {
+  padding: 15px;
+  font-weight: bold;
+  border: solid 2px black;
+  cursor :pointer;
+  position: absolute;
+  top: 5px;
+  left: 20px;
+}
+
+
+/*チェックは見えなくする*/
+.hidden_box input {
+  display: none;
+}
+
+.hidden_show {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: black;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box .hidden_show {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.hidden_box input:checked ~ .hidden_show {
+  padding: 10px 0;
+  height: 100vh;
+  opacity: 1;
+}
+
+main {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.head {
+  width: 100%;
+  margin-top: 30px;
+}
+
+h1 {
+  width: 100%;
+  /* background-color: white; */
+  font-size: 80px;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  
+}
+
+h1:hover {
+  animation: pop 0.5s linear infinite;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1)
+  }
+  20% {
+    transform: scale(1.1)
+  }
+  40% {
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(1.1)
+  }
+  80% {
+    transform: scale(1.0);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+strong {
+  color: red;
+}
+
+article {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.contents {
+  background-color: white;
+  width: 46%;
+  margin-bottom: 30px;
+  /* border: 5px solid black; */
+  /* border-radius: 10px; */
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.img {
+  width: 90%;
+  margin: 0 auto;
+  border: 5px solid black;
+  border-radius: 10px;
+  /* background-color: black; */
+  background-image: radial-gradient(pink,aqua);
+  
+}
+
+h2:hove {
+  animation: pop 0.5s linear;
+  animation-iteration-count: 3;
+}
+
+
+h2 {
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+}
+
+.sub-main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.box2 {
+  width: 100%;
+  margin: 30px;
+  padding: 20px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box2:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.box3 {
+  width: 50%;
+}
+
+h3 {
+  font-size: 40px;
+  border-bottom: 3px dotted gray;
+  background-image: radial-gradient(pink,aqua);
+}
+
+.box3 p {
+  font-size: 25px;
+}
+
+
+.pic {
+  width: 40%;
+}
+
+aside {
+  width: 30%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.move {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.iframe {
+  width: 100%;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+footer {
+  height: 10vh;
+  background: black;
+  text-align: center;
+}
+footer p {
+  color: white;
+  font-size: 14px;
+  line-height: 10vh;
+}
